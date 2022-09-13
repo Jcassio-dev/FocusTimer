@@ -17,9 +17,13 @@ export default function Sounds(){
     }
 
     function RainPlay(volume){
+        soundNature.pause()
+        soundCoffeeShop.pause()
+        soundBonfire.pause()
         soundRain.play()
         soundRain.volume = volume
     }
+    
     function BonfirePlay(volume){
         soundNature.pause()
         soundCoffeeShop.pause()
