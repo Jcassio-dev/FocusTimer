@@ -1,10 +1,10 @@
 export default function Sounds(){
     const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
-    const soundRain = new Audio('.././assets/sounds/Chuva.wav')
-    const soundNature = new Audio(".././assets/sounds/Floresta.wav")
-    const soundBonfire = new Audio(".././assets/sounds/Lareira.wav")
-    const soundCoffeeShop = new Audio(".././assets/sounds/CoffeeLoFi.wav")
-    const soundStop = new Audio(".././assets/sounds/stop.wav")
+    const soundRain = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/Chuva.wav?raw=true")
+    const soundNature = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/Floresta.wav?raw=true")
+    const soundBonfire = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/Lareira.wav?raw=true")
+    const soundCoffeeShop = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/CoffeeLoFi.wav?raw=true")
+    const soundStop = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/stop.wav?raw=true")
 
     soundRain.loop = true
     soundNature.loop = true

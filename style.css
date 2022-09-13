@@ -307,8 +307,8 @@ background: var(--bg-secondary-dark);
         gap: 4rem;
     }
     .mode{
-        top: 6rem;
-        right: 6rem;
+        top: 4rem;
+        right: 4rem;
     }
     .themeButtons svg{
         width: 3.6rem;
