@@ -1,6 +1,6 @@
 export default function Sounds(){
     const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
-    const soundRain = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/Chuva.wav?raw=true")
+    const soundRain = new Audio("/assets/sounds/Chuva.wav")
     const soundNature = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/Floresta.wav?raw=true")
     const soundBonfire = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/Lareira.wav?raw=true")
     const soundCoffeeShop = new Audio("https://github.com/Jcassio-dev/FocusTimer/blob/main/assets/sounds/CoffeeLoFi.wav?raw=true")
@@ -17,9 +17,6 @@ export default function Sounds(){
     }
 
     function RainPlay(volume){
-        soundNature.pause()
-        soundCoffeeShop.pause()
-        soundBonfire.pause()
         soundRain.play()
         soundRain.volume = volume
     }
