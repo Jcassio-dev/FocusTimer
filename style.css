@@ -1,0 +1,369 @@
+:root{
+    font-size: 62.5%;
+
+
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #E1E1E6;
+    --bg-focus: #02799D;
+    --fc-primary: #323238;
+    --fc-focus: #FFFFFF;
+    --ff-primary: 'Roboto', sans-serif;
+
+
+
+    --bg-primary-dark:  #121214;
+    --bg-secondary-dark: #29292E;
+    --bg-focus-dark:#0A3442;
+    --fc-primary-dark: #FFFFFF;
+    --ot-svg: #C4C4CC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+
+    background: var(--bg-primary);
+
+    display: grid;
+    place-content: center;
+
+    background-repeat: no-repeat;
+
+    transition: 200ms
+
+}
+
+svg{
+    width: 3rem;
+    height: 3rem;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+
+    padding: 2.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.3);
+
+    border-radius: 2.4rem;
+
+    box-shadow: .4rem .4rem .4rem rgb(0, 0, 0, 0.3);
+
+    animation: topdown 700ms ;
+}
+
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    place-content: center;
+}
+
+.timer .timeTimer{
+    display: flex;
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    font-size: 6rem;
+    line-height: 6rem;
+
+    place-content: center;
+}
+
+.timer .controlsTimer{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.timer  button{
+    transition: 200ms;
+}
+.timer  button:hover{
+    transform:  scale(1.2);
+}
+
+
+.themeButtons{
+    width: 28rem;
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem 7rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+
+}
+
+button{
+    border: none;
+    background: transparent;
+
+    cursor: pointer
+}
+.themeButtons svg{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.themeButtons button{
+    width: 7rem;
+    height: 8.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    box-shadow: .5rem .4rem .3rem rgb(0, 0, 0, 0.3);
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--bg-secondary);
+    border-radius: 1.5rem;
+
+    transition: 200ms;
+}
+
+.themeButtons button:hover{
+    transform: scale(1.1);
+}
+
+
+
+.volume{
+    -webkit-appearance: none;
+    background: #323238;
+    outline: none;
+    border-radius: .5rem;   
+    width: 5rem;
+    height: .4rem;
+
+    cursor: pointer;
+    
+}
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%; 
+
+    background: #323238;
+    cursor: pointer;
+}
+
+.volume::-moz-range-thumb {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%; 
+
+    background: #323238;
+    cursor: pointer;
+}
+
+.pause svg line{
+    stroke: #323238;
+}
+
+
+
+.seconds{
+    margin-right: 2rem;
+}
+.hours{
+    margin-left: 2rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.mode{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+
+.dark{
+    background: var(--bg-primary-dark);
+    color: var(--fc-primary-dark);
+
+    background-repeat: no-repeat;
+}
+.dark .themeButtons{
+    background: transparent;
+}
+
+.dark .container{
+    background: rgba(0, 0, 0, 0.4);
+
+    border-radius: 1rem;
+}
+
+
+.dark .themeButtons button{
+background: var(--bg-secondary-dark);
+}
+.dark .volume{
+    background: #FFFFFF;
+}
+.dark .volume::-webkit-slider-thumb{
+    background: #FFFFFF;
+}
+.dark .volume::-moz-range-thumb{
+    background: #FFFFFF;
+}
+
+
+
+.dark svg path, line{
+    fill: var(--ot-svg);
+    stroke: var(--ot-svg);
+}
+
+.dark .config path,
+.dark .pause svg path{
+    fill: transparent;
+}
+.dark .pause svg line{
+    stroke: #C4C4CC;
+}
+
+
+.light path{
+    fill: rgb(89, 89, 89);
+}
+.BgRain{
+    background-image: url('https://i.gifer.com/33HI.gif');
+    background-size: cover;
+    background-position: 80%;
+}
+.BgNature{
+    background-image: url('https://media.giphy.com/media/3diu2dFNpV8AnozJ3V/giphy.gif');
+    background-size: cover;
+    background-position: center;
+}
+.BgCoffee{
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/047/142/060/original/darius-anton-coffee-01.gif?1646856903');
+    background-size: cover;
+    background-position: 20%;
+}
+.BgBonfire{
+    background-image: url('https://i.gifer.com/75xZ.gif');
+    background-size: cover;
+    background-position: 43%;
+    
+}
+
+
+.themeButtons .focus {
+    background-color: var(--bg-focus);
+}
+
+.themeButtons .focus svg path{
+    fill: white;
+}
+.themeButtons .focus .volume{
+    background: #FFFFFF;
+}
+.themeButtons .focus .volume::-webkit-slider-thumb{
+    background: #FFFFFF;
+}
+.themeButtons .focus .volume::-moz-range-thumb{
+    background: #FFFFFF;
+}
+
+.dark .themeButtons .focus{
+    background: var(--bg-focus-dark);
+}
+@media (min-width: 1000px){
+    svg{
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+    .container{
+        flex-direction: row;
+        gap:10rem;
+        padding: 5rem 3rem;
+    }
+    .timer{
+        gap: 4rem;
+    }
+    .timer .timeTimer{
+        font-size: 8rem;
+    }
+    .timer .controlsTimer{
+        gap: 4rem;
+    }
+    .mode{
+        top: 6rem;
+        right: 6rem;
+    }
+    .themeButtons svg{
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+    .themeButtons{
+        width: 31rem;
+        grid-template-columns: 14rem 14rem;
+        gap: 3rem;
+    }
+    .themeButtons button{
+        width: 12rem;
+        height: 13.2rem;
+        gap: 3.2rem;
+
+        border-radius: 2.4rem;
+        box-shadow: .2rem .3rem .1rem rgb(0, 0, 0, 0.3);
+
+    }
+
+    .volume{
+        width: 7rem;
+
+    }
+    .volume::-webkit-slider-thumb{
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .BgRain{
+        background-size: cover;
+    }
+    .BgNature{
+        background-size: cover;
+    }
+    .BgCoffee{
+        background-size: cover;
+    }
+    .BgBonfire{
+        background-size:cover;
+        
+    }
+}
+
+
+
+
+@keyframes topdown{
+    0%{
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
