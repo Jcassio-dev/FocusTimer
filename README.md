@@ -21,6 +21,8 @@ algumas adições que coloquei no projeto:
 - Tema personalizado para cada som tocado na aplicação
 
 
+### Caso queira experimentar: https://jcassio-dev.github.io/FocusTimer/
+
 ## Telas mobile: 
 ### Light & dark mode:
 <img src = "https://user-images.githubusercontent.com/62391659/190392904-e795d1a8-726d-45c1-80c3-03f734ba678c.png"  width="260" height="360"> <img src = "https://user-images.githubusercontent.com/62391659/190392954-37b3b7ca-3baa-485e-ae85-76cee092a016.png"  width="260" height="360">
