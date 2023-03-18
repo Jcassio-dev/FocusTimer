@@ -1,5 +1,5 @@
 # FocusTimer
-Desafio estágio 05 do programa Explorer oferecido pela rocketseat
+<p align="center">Desafio estágio 05 do programa Explorer oferecido pela rocketseat</p>
 
 
 https://user-images.githubusercontent.com/62391659/190392785-34098255-e018-40ac-851d-9a8abf76b6cc.mp4
